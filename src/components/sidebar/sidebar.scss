@@ -52,4 +52,26 @@
             }
         }
     }
+    .bottom {
+        display: flex;
+        align-items: center;
+        margin: 10px;
+        .colorOption {
+            margin: 5px;
+            width: 20px;
+            height: 20px;
+            border-radius: 5px;
+            border: 1px solid #7451f8;
+            cursor: pointer;
+            &:nth-child(1) {
+                background-color: green;
+            }
+            &:nth-child(2) {
+                background-color: whitesmoke;
+            }
+            &:nth-child(3) {
+                background-color: black;
+            }
+        }
+    }
 }
