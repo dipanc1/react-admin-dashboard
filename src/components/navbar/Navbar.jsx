@@ -1,4 +1,4 @@
-import { ChatBubbleOutlineOutlined, DarkModeOutlined, FullscreenExit, LanguageOutlined, ListOutlined, SearchOutlined } from '@mui/icons-material'
+import { ChatBubbleOutlineOutlined, DarkModeOutlined, FullscreenExit, LanguageOutlined, ListOutlined, NotificationsNoneOutlined, SearchOutlined } from '@mui/icons-material'
 import React from 'react'
 import './navbar.scss'
 
@@ -7,25 +7,30 @@ const Navbar = () => {
     <div className='navbar'>
       <div className="wrapper">
         <div className="search">
-          <input type="text" placeholder="Search..." />
-          <SearchOutlined />
+          <input type="text" placeholder="Search..." className="icon" />
+          <SearchOutlined className="icon" />
         </div>
         <div className="items">
           <div className="item">
-            <LanguageOutlined/>
-            English 
+            <LanguageOutlined className="icon" />
+            English
           </div>
           <div className="item">
-            <DarkModeOutlined/>
+            <DarkModeOutlined className="icon" />
           </div>
           <div className="item">
-            <FullscreenExit/> 
+            <NotificationsNoneOutlined className="icon" />
+            <div className="counter">1</div>
           </div>
           <div className="item">
-            <ChatBubbleOutlineOutlined/> 
+            <ChatBubbleOutlineOutlined className="icon" />
+            <div className="counter">2</div>
           </div>
           <div className="item">
-            <ListOutlined/> 
+            <ListOutlined className="icon" />
+          </div>
+          <div className="item">
+            <img src="https://loveshayariimages.in/wp-content/uploads/2021/10/1080p-Latest-Whatsapp-Profile-Images-1.jpg" alt="avatar"className='avatar'/>
           </div>
         </div>
       </div>
