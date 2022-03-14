@@ -1,4 +1,4 @@
-import { ChatBubbleOutlineOutlined, DarkModeOutlined, FullscreenExit, LanguageOutlined, ListOutlined, NotificationsNoneOutlined, SearchOutlined } from '@mui/icons-material'
+import { ChatBubbleOutlineOutlined, DarkModeOutlined, LanguageOutlined, ListOutlined, NotificationsNoneOutlined, SearchOutlined } from '@mui/icons-material'
 import React from 'react'
 import './navbar.scss'
 
