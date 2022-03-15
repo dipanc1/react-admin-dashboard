@@ -1,14 +1,17 @@
 import { DashboardSharp, ShoppingBag, ShoppingCart, NotificationsActive, Healing, List, Settings, PersonOutline, Logout, PersonPin, DeliveryDining, Details } from '@mui/icons-material'
 import React from 'react'
 import './sidebar.scss'
+import { Link } from 'react-router-dom'
 
 const Sidebar = () => {
   return (
     <div className='sidebar'>
       <div className="top">
-        <span className="logo">
-          Chicken Farm.
-        </span>
+        <Link to='/' style={{ textDecoration: "none" }}>
+          <span className="logo">
+            Chicken Farm.
+          </span>
+        </Link>
       </div>
       <hr />
       <div className="center">
@@ -19,14 +22,18 @@ const Sidebar = () => {
             <span>Dashboard</span>
           </li>
           <p className="title">LISTS</p>
+        <Link to='/users' style={{ textDecoration: "none" }}>
           <li>
             <PersonPin className="icon" />
             <span>Users</span>
           </li>
+        </Link>
+        <Link to='/products' style={{ textDecoration: "none" }}>
           <li>
             <ShoppingCart className="icon" />
             <span>Products</span>
           </li>
+        </Link>
           <li>
             <ShoppingBag className="icon" />
             <span>Orders</span>
