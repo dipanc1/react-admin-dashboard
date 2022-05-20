@@ -1,4 +1,4 @@
-import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { BrowserRouter, Navigate, Route, Routes } from "react-router-dom";
 import Home from "./pages/home/Home";
 import Login from "./pages/login/Login";
 import List from "./pages/list/List";
@@ -12,6 +12,16 @@ import { DarkModeContext } from "./context/darkModeContext";
 function App() {
 
   const { darkMode, greenMode } = useContext(DarkModeContext);
+
+  const currentUser = false;
+
+  const RequireAuth = ({ children }) => {
+    if (currentUser) {
+      return children;
+    } else {
+      <Navigate to="/login" />
+    }
+  };
 
   return (
     <div className={darkMode ? "app dark" : greenMode ? "app green" : "app"}>
